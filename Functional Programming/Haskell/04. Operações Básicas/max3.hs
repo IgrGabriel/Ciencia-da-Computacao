@@ -1,0 +1,1 @@
+ max3 a b c = max c (max a b)

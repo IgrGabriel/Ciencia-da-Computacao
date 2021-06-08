@@ -1,0 +1,1 @@
+divide x ind = splitAt ind x
