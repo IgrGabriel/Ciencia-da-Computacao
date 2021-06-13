@@ -30,5 +30,5 @@ int main(){
     else
         cout << a1.nome << " reprovado(a) em " << a1.disciplina << endl;
 
-    return 0;
+    return 0; 
 }
