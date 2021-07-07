@@ -1,0 +1,1 @@
+gerador1 = 0 : concat [[x, -x] | x <- [1..]]
