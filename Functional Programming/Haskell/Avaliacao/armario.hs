@@ -45,8 +45,15 @@ aluguel indice armarios =
 -- -- para devolver um armário é necessário que ele exista, que esteja alugado e que o código esteja correto
 -- -- utilize a função pegar armário para verificar a existência.
 -- -- Se o armário não estiver alugado ou se o código estiver incorreto avise utilizando o Left.
--- devolucao :: Int -> Codigo -> Armarios -> Either String Armarios
--- devolucao indice codigo armarios =  ...
+devolucao :: Int -> Codigo -> Armarios -> Either String Armarios
+devolucao indice codigo armarios = 
+    case pegarArmario indice armarios of
+        Left frase -> Left frase
+        Right (estado, code) -> if estado /= Alugado
+                                    then Left "Armario nao esta alugado"
+                                    else if code /= codigo
+                                    then Left "Codigo incorreto"
+                                    else Right (Map.insert indice (Livre, codigo) armarios)
 
 
 lockers :: Armarios
