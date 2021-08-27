@@ -1,4 +1,4 @@
--- Usando Filter
+-- Usando Filter 
 maioresQue n xs = filter (>n) xs
 
 -- Usando compreensão de lista
