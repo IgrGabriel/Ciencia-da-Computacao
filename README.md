@@ -1,2 +1,2 @@
 # Computer-Science
-Repósitorio destinado para as atividades do curso de Ciência da Computação
+Repósitorio destinado para as atividades que envolvem programação desenvolvidas durante o curso de Ciência da Computação
