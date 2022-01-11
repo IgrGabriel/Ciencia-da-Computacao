@@ -8,8 +8,12 @@ export class Pokemon {
     readonly defesaEspecial: number;
     readonly velocidade: number;
     readonly imagem: string;
+    readonly peso: number;
+    readonly altura: number;
+    readonly tipo: string;
+    readonly tipo2: string;
 
-    constructor(id: number, name: string, pvMax: number, ataque: number, defesa: number, ataqueEspecial: number, defesaEspecial: number, velocidade: number, imagem: string) {
+    constructor(id: number, name: string, pvMax: number, ataque: number, defesa: number, ataqueEspecial: number, defesaEspecial: number, velocidade: number, imagem: string, peso: number, altura: number, tipo: string, tipo2: string) {
         this.id = id;
         this.nome = name;
         this.pvMax = pvMax;
@@ -19,5 +23,9 @@ export class Pokemon {
         this.defesaEspecial = defesaEspecial;
         this.velocidade = velocidade;
         this.imagem = imagem;
+        this.peso = peso;
+        this.altura = altura;
+        this.tipo = tipo;
+        this.tipo2 = tipo2;
     }
 }
