@@ -13,7 +13,7 @@
             </tr>
           </thead>
 
-          <tbody>
+          <tbody class="list">
             <tr v-for="transacao in transacoes" :key="transacao.id">
               <td>{{ transacao.data }}</td>
               <td>{{ transacao.categoria }}</td>
@@ -23,7 +23,6 @@
             </tr>
           </tbody>
         </table>
-        <!-- controles -->
       </div>
     </div>
   </div>

@@ -67,7 +67,7 @@
               <label for="categoria">
                 <i class="bx bx-category"></i>
               </label>
-              <select id="categoria" name="categoria">
+              <select id="categoria" name="categoria" v-model="categoria">
                 <option value="">Categoria</option>
                 <option
                   v-for="item in categoriasDespesa"
@@ -84,8 +84,8 @@
               <label for="categoria">
                 <i class="bx bx-category"></i>
               </label>
-              <select id="categoria" name="categoria">
-                <option value="">Selecione uma categoria</option>
+              <select id="categoria" name="categoria" v-model="categoria">
+                <option value="">Categoria</option>
                 <option
                   v-for="item in categoriasReceita"
                   :key="item.id"
