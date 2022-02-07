@@ -1,0 +1,160 @@
+/*Bordas coloridas*/
+main .container .borda {
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  padding-left: 5px;
+}
+
+main .container .borda-vermelha {
+  border-left: 3px solid var(--color-red);
+}
+
+main .container .borda-verde {
+  border-left: 3px solid var(--color-green);
+}
+
+main .container .saldo-value {
+  font-size: 2.5rem;
+  text-align: left;
+}
+
+main .container .receita-value,
+main .container .despesa-value {
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+main .container .saldo-value {
+  color: var(--saldo-color);
+}
+
+main .container .receita-value {
+  color: var(--receita-color);
+}
+
+main .container .despesa-value {
+  color: var(--despesa-color);
+}
+
+/* Modal */
+.modal .modal-body form select,
+.modal .modal-body form .input-user,
+.modal .modal-body form ::-webkit-datetime-edit,
+.modal .modal-body form input::placeholder,
+.modal .modal-body form .input-box,
+.modal .modal-header,
+.modal .modal-content {
+  color: var(--color-text);
+}
+
+.modal .modal-header {
+  background-color: var(--color-secondary);
+}
+
+.modal .modal-content {
+  background-color: var(--color-primary);
+}
+
+.modal .modal-footer {
+  background-color: var(--color-secondary);
+}
+
+/* Formulario */
+.modal .modal-body form .input-box,
+.modal .modal-body form .data-container {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+/* bordas input */
+.modal .modal-body form .input-user,
+.modal .modal-body form select,
+.modal .modal-body form .data-container input[type="date"] {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color-primary);
+  background: var(--color-primary);
+  margin-bottom: 20px;
+}
+
+/* tamanho e espaçamento*/
+.modal .modal-body form .input-user,
+.modal .modal-body form select {
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+/* mudando o estilo do input data */
+.modal form .data-container input[type="date"] {
+  font-size: 15px;
+  cursor: text;
+  border-bottom: none;
+}
+
+/* icone do calendario */
+.modal form .data-container ::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  transform: translateX(-142px);
+  border-bottom: none;
+  background-image: url(/img/calendar.png);
+}
+
+/* dd/mm/aaaa */
+.modal form .data-container ::-webkit-datetime-edit {
+  cursor: text;
+  transform: translateX(25px);
+  border-bottom: 1px solid var(--color-primary);
+}
+
+/* Transações - Lista */
+main .container .transacao-container {
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+main .container .transacao-container .transacao {
+  border: 1px solid var(--color-text);
+  border-radius: 10px;
+  box-shadow: 1px 1px 0 #706f6faf;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.footer-container {
+  max-width: 100%;
+}
+
+.bg-main-color {
+  background: var(--color-primary);
+}
+
+.bg-color-secondary {
+  background: var(--color-secondary);
+}
+
+::selection {
+  background-color: #695cfe;
+  color: var(--color-text);
+}
+
+@media (max-width: 576.98px) {
+  main .container .saldo-value {
+    font-size: 2.8rem;
+    text-align: start;
+  }
+
+  main .container .receita-value,
+  main .container .despesa-value {
+    font-size: 1.8rem;
+    text-align: start;
+  }
+}
+
+/* Definindo o tamanho maximo do container */
+@media (min-width: 991.98px) {
+  main .container {
+    width: 720px;
+  }
+}

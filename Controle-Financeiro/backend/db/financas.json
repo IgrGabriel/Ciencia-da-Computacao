@@ -1,0 +1,112 @@
+{
+  "nome": "Usuario",
+  "senha": "Controle123",
+  "email": "usuario@mail.com",
+  "id": "1",
+  "financas": [
+    {
+      "id": "1",
+      "categoria": "Aluguel",
+      "valor": "700.00",
+      "data": "01/01/2022",
+      "descricao": "Aluguel do apartamento",
+      "tipo": "despesa"
+    },
+    {
+      "id": "2",
+      "categoria": "Comida",
+      "valor": "25.00",
+      "data": "03/01/2022",
+      "descricao": "Almoço",
+      "tipo": "despesa"
+    },
+    {
+      "id": "3",
+      "categoria": "Lazer",
+      "valor": "100.00",
+      "data": "14/01/2022",
+      "descricao": "Cinema",
+      "tipo": "despesa"
+    },
+    {
+      "id": "4",
+      "categoria": "Saúde",
+      "valor": "50.00",
+      "data": "21/01/2022",
+      "descricao": "Consulta",
+      "tipo": "despesa"
+    },
+    {
+      "id": "5",
+      "categoria": "Transporte",
+      "valor": "100.00",
+      "data": "21/01/2022",
+      "descricao": "Gasolina",
+      "tipo": "despesa"
+    },
+    {
+      "id": "6",
+      "categoria": "Salário",
+      "valor": "5000.00",
+      "data": "01/01/2022",
+      "descricao": "Salário do mês",
+      "tipo": "receita"
+    },
+    {
+      "id": "7",
+      "categoria": "Investimentos",
+      "valor": "125.00",
+      "data": "26/01/2022",
+      "descricao": "Dividendos",
+      "tipo": "receita"
+    },
+    {
+      "id": "8",
+      "categoria": "Servicos",
+      "valor": "450.00",
+      "data": "29/01/2022",
+      "descricao": "Internet",
+      "tipo": "despesa"
+    },
+    {
+      "id": "9",
+      "categoria": "Transporte",
+      "valor": "50.00",
+      "data": "29/01/2022",
+      "descricao": "Gasolina",
+      "tipo": "despesa"
+    },
+    {
+      "id": "10",
+      "categoria": "Aluguel",
+      "valor": "700.00",
+      "data": "06/02/2022",
+      "descricao": "Aluguel do apartamento",
+      "tipo": "despesa"
+    },
+    {
+      "id": "11",
+      "categoria": "Comida",
+      "valor": "25.00",
+      "data": "06/02/2022",
+      "descricao": "Almoço",
+      "tipo": "despesa"
+    },
+    {
+      "id": "12",
+      "categoria": "Lazer",
+      "valor": "100.00",
+      "data": "06/02/2022",
+      "descricao": "Cinema",
+      "tipo": "despesa"
+    },
+    {
+      "id": "13",
+      "categoria": "Saúde",
+      "valor": "50.00",
+      "data": "06/02/2022",
+      "descricao": "Consulta",
+      "tipo": "despesa"
+    }
+  ]
+}
