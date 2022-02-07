@@ -10,7 +10,7 @@
         </tr>
       </thead>
 
-      <tbody class="list">
+      <tbody>
         <tr v-for="item in despesasDiarias" :key="item.id">
           <td>{{ item.data }}</td>
           <td>{{ item.categoria }}</td>

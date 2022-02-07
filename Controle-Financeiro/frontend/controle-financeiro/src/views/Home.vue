@@ -44,7 +44,7 @@ export default {
       saldoTotal: 0,
       valorReceita: 0,
       valorDespesa: 0,
-      dataAtual: "06/02/2022",
+      dataAtual: new Date().toLocaleDateString("en-GB"),
       despesasDiarias: null,
     };
   },

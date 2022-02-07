@@ -1,0 +1,58 @@
+{
+  "depesa": [
+    {
+      "id": 1,
+      "categoria": "Aluguel"
+    },
+    {
+      "id": 2,
+      "categoria": "Comida"
+    },
+    {
+      "id": 3,
+      "categoria": "Lazer"
+    },
+    {
+      "id": 4,
+      "categoria": "Saúde"
+    },
+    {
+      "id": 5,
+      "categoria": "Transporte"
+    },
+    {
+      "id": 6,
+      "categoria": "Roupas"
+    },
+    {
+      "id": 7,
+      "categoria": "Outros"
+    }
+  ],
+  "receita": [
+    {
+      "id": 1,
+      "categoria": "Salário"
+    },
+    {
+      "id": 2,
+      "categoria": "Investimentos"
+    },
+    {
+      "id": 3,
+      "categoria": "Serviços"
+    },
+    {
+      "id": 4,
+      "categoria": "Vendas"
+    },
+    {
+      "id": 5,
+      "categoria": "Emprestimos"
+    },
+    {
+      "id": 6,
+      "categoria": "Outros"
+    }
+  ]
+}

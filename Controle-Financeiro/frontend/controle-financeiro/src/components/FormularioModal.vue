@@ -34,6 +34,18 @@
               />
             </div>
 
+            <!-- Escolher o tipo da transação -->
+            <div class="input-box">
+              <label for="tipo">
+                <i class="bx bx-dollar"></i>
+              </label>
+              <select v-model="tipo" id="tipo" name="tipo" class="text-reset">
+                <option selected disabled>Tipo da transação</option>
+                <option value="receita">Receita</option>
+                <option value="despesa">Despesa</option>
+              </select>
+            </div>
+
             <!-- Descrição da transação -->
             <div class="input-box">
               <label for="descricao" class="labelInput">
@@ -50,17 +62,37 @@
               />
             </div>
 
-            <!-- Opções de categoria para receita -->
-            <div class="input-box">
+            <!-- Opções de categoria para despesa -->
+            <div class="input-box" v-if="tipo == 'despesa'">
               <label for="categoria">
                 <i class="bx bx-category"></i>
               </label>
-              <select id="categoria" name="categoria" v-model="categoria">
-                <option selected disabled>Categoria</option>
-                <option value="salario">Salário</option>
-                <option value="investimento">Investimentos</option>
-                <option value="servicos">Serviços</option>
-                <option value="vendas">Vendas</option>
+              <select id="categoria" name="categoria">
+                <option value="">Categoria</option>
+                <option
+                  v-for="item in categoriasDespesa"
+                  :key="item.id"
+                  :value="item.categoria"
+                >
+                  {{ item.categoria }}
+                </option>
+              </select>
+            </div>
+
+            <!-- Opções de categoria para receita -->
+            <div class="input-box" v-if="tipo == 'receita'">
+              <label for="categoria">
+                <i class="bx bx-category"></i>
+              </label>
+              <select id="categoria" name="categoria">
+                <option value="">Selecione uma categoria</option>
+                <option
+                  v-for="item in categoriasReceita"
+                  :key="item.id"
+                  :value="item.categoria"
+                >
+                  {{ item.categoria }}
+                </option>
               </select>
             </div>
 
@@ -73,18 +105,6 @@
                 v-model="data"
                 required
               />
-            </div>
-
-            <!-- Escolher o tipo da transação -->
-            <div class="input-box">
-              <label for="tipo">
-                <i class="bx bx-dollar"></i>
-              </label>
-              <select v-model="tipo" id="tipo" name="tipo">
-                <option selected disabled>Tipo</option>
-                <option value="receita">Receita</option>
-                <option value="despesa">Despesa</option>
-              </select>
             </div>
 
             <hr />
@@ -102,15 +122,23 @@
 </template>
 
 <script>
+import categorias from "../../db/categorias.json";
 export default {
   data() {
     return {
+      categoriasDespesa: null,
+      categoriasReceita: null,
+
       valor: null,
       descricao: null,
       categoria: null,
       data: null,
-      tipo: String,
+      tipo: null,
     };
+  },
+  mounted() {
+    this.categoriasDespesa = categorias.depesa;
+    this.categoriasReceita = categorias.receita;
   },
   methods: {
     async createTransation(e) {
@@ -125,12 +153,6 @@ export default {
       };
 
       console.log(transacao);
-
-      // axios
-      //   .post("http://localhost:8080/financas", transacao)
-      //   .then((response) => {
-      //     console.log(response);
-      //   });
 
       //limpar os campos do formulário
       this.valor = "";
