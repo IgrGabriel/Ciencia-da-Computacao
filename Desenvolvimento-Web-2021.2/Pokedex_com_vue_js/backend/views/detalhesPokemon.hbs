@@ -1,0 +1,91 @@
+<div class="card">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-md-3 col-lg-3">
+                <img src="{{ imagem }}" class="card-img-top" alt="{{ nome }}">
+            </div>
+            <div class="col-sm-8 col-md-8 col-lg-8">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-auto">
+                            <h5 class="card-title">{{ nome }}</h5>
+                        </div>
+                        <div class="col-sm-2 col-md-2 col-lg-1">
+                            <span class="badge bg-secondary">{{ tipo }}</span>
+                        </div>
+                        <div class="col-sm-2 col-auto">
+                            <span class="badge bg-secondary">{{ tipo2 }}</span>
+                        </div>      
+                    </div>
+                    
+                    <h6 class="card-subtitle text-muted fw-bold">Peso {{ peso }} Ibs</h6>
+                    <h6 class="card-text text-muted fw-bold">Altura {{ altura }}"</h6>
+                    <h6 class="card-text text-muted fw-bold">Base stats</h6>
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <h6 class="card-text text-muted fw-bold">PvMax: </h6>
+                        </div>
+                        <div class="col-sm-6 col-md-8 col-lg-9">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: {{ pvMax }}%" aria-valuenow="{{ pvMax }}" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <h6 class="card-text text-muted fw-bold">Ataque: </h6>
+                        </div>
+                        <div class="col-sm-6 col-md-8 col-lg-9">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: {{ ataque }}%" aria-valuenow="{{ ataque }}" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <h6 class="card-text text-muted fw-bold">Defesa: </h6>
+                        </div>
+                        <div class="col-sm-6 col-md-8 col-lg-9">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: {{ defesa }}%" aria-valuenow="{{ defesa }}" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <h6 class="card-text text-muted fw-bold">Ataque Esp.: </h6>
+                        </div>
+                        <div class="col-sm-6 col-md-8 col-lg-9">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: {{ ataqueEspecial }}%" aria-valuenow="{{ ataqueEspecial }}" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <h6 class="card-text text-muted fw-bold">Defesa Esp.: </h6>
+                        </div>
+                        <div class="col-sm-6 col-md-8 col-lg-9">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: {{ defesaEspecial }}%" aria-valuenow="{{ defesaEspecial }}" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <h6 class="card-text text-muted fw-bold">Velocidade: </h6>
+                        </div>
+                        <div class="col-sm-6 col-md-8 col-lg-9">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: {{ velocidade }}%" aria-valuenow="{{ velocidade }}" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

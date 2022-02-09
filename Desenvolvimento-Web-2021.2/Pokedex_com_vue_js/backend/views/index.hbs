@@ -1,0 +1,15 @@
+{{#each pokemons}}
+
+<div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="card">
+        <img src="{{ this.imagem }}" alt="{{ this.nome }}" class="card-img-top"/>
+        <div class="card-body">
+            <h5 class="card-title">{{ this.nome }}</h5>
+            <span class="badge bg-secondary">{{ this.tipo }}</span>
+            <span class="badge bg-secondary">{{ this.tipo2 }}</span>
+            <a href="/pokemons/{{id}}"><button class="btn btn-danger">Mais detalhes</button></a>                      
+        </div>
+    </div>
+</div>
+
+{{/each}}
