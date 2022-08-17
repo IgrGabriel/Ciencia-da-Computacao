@@ -149,7 +149,7 @@ main .container .despesa-value {
 /* icone do calendario */
 .modal form .data-container ::-webkit-calendar-picker-indicator {
   cursor: pointer;
-  transform: translateX(-142px);
+  transform: translateX(-115px);
   border-bottom: none;
   background-image: url(/img/calendar.png);
 }

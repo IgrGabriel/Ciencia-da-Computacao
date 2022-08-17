@@ -40,7 +40,7 @@
                 <i class="bx bx-dollar"></i>
               </label>
               <select v-model="tipo" id="tipo" name="tipo" class="text-reset">
-                <option selected disabled>Tipo da transação</option>
+                <option value="" selected disabled>Tipo da transação</option>
                 <option value="receita">Receita</option>
                 <option value="despesa">Despesa</option>
               </select>
@@ -52,7 +52,7 @@
                 <i class="bx bx-category"></i>
               </label>
               <select id="categoria" name="categoria" v-model="categoria">
-                <option selected disabled>Categoria</option>
+                <option value="" selected disabled>Categoria</option>
                 <option
                   v-for="item in categoriasDespesas"
                   :key="item.id"
@@ -69,7 +69,7 @@
                 <i class="bx bx-category"></i>
               </label>
               <select id="categoria" name="categoria" v-model="categoria">
-                <option selected disabled>Categoria</option>
+                <option value="" selected disabled>Categoria</option>
                 <option
                   v-for="item in categoriasReceitas"
                   :key="item.id"
